@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="831" height="134" viewBox="0 0 831 134">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #ef0f3a;
+        stroke: #ef0f3a;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        filter: url(#drop-shadow-1);
+      }
+    </style>
+
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" in="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8.477" result="dropBlur"/>
+      <feFlood flood-color="#fff" flood-opacity="0.25"/>
+      <feComposite operator="in" in2="dropBlur" result="dropShadowComp"/>
+      <feComposite in="SourceGraphic" result="shadowed"/>
+    </filter>
+  </defs>
+  <g>
+    <g style="fill: #ef0f3a; filter: url(#drop-shadow-1)">
+      <path d="M6.842,18.289 L808.995,16.999 L733.118,95.708 L-69.035,96.999 L6.842,18.289 Z" id="path-1" style="stroke: inherit; filter: none; fill: inherit" class="cls-1"/>
+    </g>
+    <use xlink:href="#path-1" style="stroke: #ef0f3a; filter: none; fill: none"/>
+    <path d="M-62.118,95.708 L740.035,96.999 L664.158,18.289 L-137.995,16.999 L-62.118,95.708 Z" class="cls-2"/>
+  </g>
+</svg>
