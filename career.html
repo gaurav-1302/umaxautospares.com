@@ -264,97 +264,82 @@
                     <!-- Single Input -->
                     <div class="col-md-6 form-group">
                         <label class="sr-only" for="firstName">First Name</label>
-                        <input class="form-control" type="text" name="firstName" id="firstName"
-                            placeholder="First Name">
+                        <input class="form-control" type="text" name="firstName" id="firstName" placeholder="First Name"
+                            required>
                     </div>
                     <!-- Single Input -->
                     <div class="col-md-6 form-group">
                         <label class="sr-only" for="lastName">Last Name</label>
-                        <input class="form-control" type="text" name="lastName" id="lastName" placeholder="Last Name">
+                        <input class="form-control" type="text" name="lastName" id="lastName" placeholder="Last Name"
+                            required>
                     </div>
                     <!-- Single Input -->
                     <div class="col-md-6 form-group">
                         <label class="sr-only" for="email">Email Address</label>
-                        <input class="form-control" type="email" name="email" id="email" placeholder="Email Address">
+                        <input class="form-control" type="email" name="email" id="email" placeholder="Email Address"
+                            required>
                     </div>
                     <!-- Single Input -->
                     <div class="col-md-6 form-group">
                         <label class="sr-only" for="mobileNumber">Mobile Number</label>
                         <input class="form-control" type="number" name="mobileNumber" id="mobileNumber"
-                            placeholder="Mobile Number">
+                            placeholder="Mobile Number" required>
                     </div>
-                    <!-- Single Input -->
+
                     <div class="col-md-6 form-group">
-                        <label class="sr-only" for="date">Select Date</label>
-                        <input class="form-control date-pick" type="text" name="date" id="date"
-                            placeholder="Select Date">
-                        <i class="fas fa-caret-down"></i>
+                        <label class="sr-only" for="mobileNumber">DOB</label>
+                        <input class="form-control" type="number" name="mobileNumber" id="mobileNumber"
+                            placeholder="DOB (YYYY-MM-DD)" required>
                     </div>
-                    <!-- Single Input -->
+
                     <div class="col-md-6 form-group">
-                        <label class="sr-only" for="time">Select Time</label>
-                        <input class="form-control time-pick" type="text" name="time" id="time"
-                            placeholder="Select Time">
-                        <i class="fas fa-caret-down"></i>
+                        <label class="sr-only" for="brand">Gender</label>
+                        <select name="brand" id="brand" class="select2" required>
+                            <option>Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Others">Others</option>
+                        </select>
                     </div>
-                    <!-- Single Input -->
+
                     <div class="col-md-6 form-group">
-                        <label class="sr-only" for="year">Vehicle Year</label>
-                        <select name="year" id="year" class="select2">
-                            <option>Vehicle Year</option>
-                            <option value="2020">2020</option>
-                            <option value="2021">2021</option>
-                            <option value="2023">2023</option>
-                            <option value="2023">2023</option>
-                            <option value="2024">2024</option>
+                        <label class="sr-only" for="year">Experience</label>
+                        <select name="year" id="year" class="select2" required>
+                            <option>Experience</option>
+                            <option value="0 Year">0 Year</option>
+                            <option value="1 Year">1 Year</option>
+                            <option value="2 Years">2 Years</option>
+                            <option value="3+ Years">3+ Years</option>
                         </select>
                     </div>
                     <!-- Single Input -->
-                    <div class="col-md-6 form-group">
-                        <label class="sr-only" for="brand">Vehicle Brand</label>
-                        <select name="brand" id="brand" class="select2">
-                            <option>Vehicle Brand</option>
-                            <option value="Zanella">Zanella</option>
-                            <option value="Feresa">Feresa</option>
-                            <option value="Koller">Koller</option>
-                            <option value="Oliva">Oliva</option>
-                            <option value="Winograd">Winograd</option>
-                        </select>
-                    </div>
+
                     <!-- Single Input -->
                     <div class="col-md-6 form-group">
-                        <label class="sr-only" for="model">Vehicle Model</label>
-                        <select name="model" id="model" class="select2">
-                            <option>Vehicle Model</option>
-                            <option value="Sedan">Sedan</option>
-                            <option value="Maruti">Maruti</option>
-                            <option value="Suzuki">Suzuki</option>
-                            <option value="Ciaz">Ciaz</option>
+                        <label class="sr-only" for="model">Role</label>
+                        <select name="model" id="model" class="select2" required>
+                            <option>Select Role</option>
+                            <option value="Computer Operator">Computer Operator</option>
+                            <option value="Shop Staff">Shop Staff</option>
+                            <option value="Filed Staff">Filed Staff</option>
+                            <option value="Sales Manager">Sales Manager</option>
+                            <option value="Marketing Manager">Marketing Manager</option>
+                            <option value="Office Staff">Office Staff</option>
+                            <option value="Account Manager">Account Manager</option>
+                            <option value="Franchise Manager">Franchise Manager</option>
+                            <option value="Advertisement Manager">Advertisement Manager</option>
                         </select>
                     </div>
-                    <!-- Single Input -->
-                    <div class="col-md-6 form-group">
-                        <label class="sr-only" for="services">Select Services</label>
-                        <select name="services" id="services" class="select2">
-                            <option>Select Services</option>
-                            <option value="CarHistory">Car History</option>
-                            <option value="BeltReplacement">Belt Replacement</option>
-                            <option value="SeatBeltsChange">Seat Belts Change</option>
-                            <option value="ExteriorLightsChange">Exterior Lights Change</option>
-                            <option value="ExteriorLightsChange">Exterior Lights Change</option>
-                            <option value="windscreenwashers">Windscreen Washers</option>
-                            <option value="wipersChange">Wipers Change</option>
-                        </select>
-                    </div>
+
                     <!-- Single Input -->
                     <div class="col-12 form-group">
-                        <label class="sr-only" for="message">Message</label>
+                        <label class="sr-only" for="message">Cover letter</label>
                         <textarea class="form-control" id="message" name="message"
-                            placeholder="Write a Message...."></textarea>
+                            placeholder="Write a cover letter...." required></textarea>
                     </div>
                     <!-- Single Input -->
                     <div class="col-12 form-group mb-0 pt-2">
-                        <button type="submit" class="primary-btn">Send Appoinment</button>
+                        <button type="submit" class="primary-btn">Send Application</button>
                     </div>
                 </div><!-- .row END -->
             </form>
