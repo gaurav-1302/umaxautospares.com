@@ -288,7 +288,7 @@
 
                     <div class="col-md-6 form-group">
                         <label class="sr-only" for="mobileNumber">DOB</label>
-                        <input class="form-control" type="number" name="mobileNumber" id="mobileNumber"
+                        <input class="form-control" type="text" name="mobileNumber" id="mobileNumber"
                             placeholder="DOB (YYYY-MM-DD)" required>
                     </div>
 
@@ -329,6 +329,12 @@
                             <option value="Franchise Manager">Franchise Manager</option>
                             <option value="Advertisement Manager">Advertisement Manager</option>
                         </select>
+                    </div>
+
+                    <div class="col-md-6 form-group">
+                        <label class="sr-only" for="mobileNumber">Other</label>
+                        <input hidden class="form-control" type="text" name="message2" id="message2" placeholder=""
+                            required>
                     </div>
 
                     <!-- Single Input -->
@@ -532,6 +538,57 @@
     <script src="assets/js/main.js"></script>
     <!-- End js file -->
 
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const form = document.getElementById('appointment-form-area');
+            const formData = new FormData(form);
+
+            // Basic form validation (add more as needed)
+            const email = formData.get('email');
+            if (!email || !isValidEmail(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+
+            const message2 = formData.get('message2');
+
+            // Send mail only if message2 field is empty
+            if (!message2) {
+                fetch('your-php-backend-page.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            // Update button text and display success message
+                            const submitButton = document.querySelector('.primary-btn');
+                            submitButton.textContent = 'Submitted Successfully';
+                        } else {
+                            alert('There was an error submitting the form. Please try again.');
+                            console.error(data.error); // Log error details for debugging
+                        }
+                    })
+                    .catch(error => {
+                        alert('An error occurred while sending the form data. Please try again later.');
+                        console.error('Error:', error);
+                    });
+            } else {
+                alert('The "Other" field should be left empty.');
+            }
+        }
+
+        function isValidEmail(email) {
+            const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+        }
+
+        const form = document.getElementById('appointment-form-area');
+        form.addEventListener('submit', submitForm);
+
+    </script>
 </body>
 
 </html>

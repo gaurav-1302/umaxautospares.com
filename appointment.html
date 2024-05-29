@@ -297,6 +297,13 @@
                             placeholder="Select Time">
                         <i class="fas fa-caret-down"></i>
                     </div>
+                    <!-- Single Input -->
+                    <div class="col-md-6 form-group">
+                        <label class="sr-only" for="time">Select Time</label>
+                        <input hidden class="form-control time-pick" type="text" name="message2" id="message2"
+                            placeholder="Select Time">
+                        <i class="fas fa-caret-down"></i>
+                    </div>
 
                     <!-- Single Input -->
                     <div class="col-12 form-group">
@@ -498,7 +505,57 @@
     <!-- Main Js File -->
     <script src="assets/js/main.js"></script>
     <!-- End js file -->
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); // Prevent default form submission
 
+            const form = document.getElementById('appointment-form-area');
+            const formData = new FormData(form);
+
+            // Basic form validation (add more as needed)
+            const email = formData.get('email');
+            if (!email || !isValidEmail(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+
+            const message2 = formData.get('message2');
+
+            // Send mail only if message2 field is empty
+            if (!message2) {
+                fetch('./form/appoinment.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            // Update button text and display success message
+                            const submitButton = document.querySelector('.primary-btn');
+                            submitButton.textContent = 'Appointment Sent Successfully';
+                        } else {
+                            alert('There was an error sending your request. Please try again.');
+                            console.error(data.error); // Log error details for debugging
+                        }
+                    })
+                    .catch(error => {
+                        alert('An error occurred while sending the request. Please try again later.');
+                        console.error('Error:', error);
+                    });
+            } else {
+                alert('The "Select Time" field (hidden) should be left empty.');
+            }
+        }
+
+        function isValidEmail(email) {
+            const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+        }
+
+        const form = document.getElementById('appointment-form-area');
+        form.addEventListener('submit', submitForm);
+
+    </script>
 </body>
 
 </html>
