@@ -11,12 +11,12 @@ $subject = $_POST['subject'];
 $message = $_POST['message']; // Assuming the hidden message field
 
 // Subject and body of the email
-$subject = 'Contact from ' . $name . ' - ' . $subject;
-$body = "**Name:** $name\n";
-$body .= "**Email:** $email\n";
-$body .= "**Mobile Number:** $mobileNumber\n";
-$body .= "**Subject:** $subject\n";
-$body .= "**Message:**\n$message";
+$subject = 'Contact from ' . $name;
+$body = "*Name:* $name\n";
+$body .= "*Email:* $email\n";
+$body .= "*Mobile Number:* $mobileNumber\n";
+$body .= "*Subject:* $subject\n";
+$body .= "*Message:*\n$message";
 
 // Set headers
 $headers = array(

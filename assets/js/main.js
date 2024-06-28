@@ -51,7 +51,7 @@
   /*---------- 01. On Load And On Resize Function  ----------*/
   $(window).on('load', function () {
     $('.preloader').fadeOut('slow');
-    setTimeout(function(){
+    setTimeout(function () {
       aosAnimation();
     }, 5000)
   });
@@ -364,17 +364,17 @@
     slidesToShow: 1,
     slidesToScroll: 1,
     responsive: [{
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-        }
+      breakpoint: 480,
+      settings: {
+        arrows: false,
       }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+      }
+    }
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
@@ -398,30 +398,30 @@
     slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [{
-        breakpoint: 1500,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1
-        }
-      }, {
-        breakpoint: 1350,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1
-        }
-      }, {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      }, {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
+      breakpoint: 1500,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
       }
+    }, {
+      breakpoint: 1350,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    }, {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }, {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
@@ -441,29 +441,29 @@
     slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [{
-        breakpoint: 1670,
-        settings: {
-          arrows: false
-        }
-      }, {
-        breakpoint: 1200,
-        settings: {
-          arrows: false,
-          slidesToShow: 3
-        }
-      }, {
-        breakpoint: 992,
-        settings: {
-          arrows: false,
-          slidesToShow: 2
-        }
-      }, {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          slidesToShow: 1
-        }
+      breakpoint: 1670,
+      settings: {
+        arrows: false
       }
+    }, {
+      breakpoint: 1200,
+      settings: {
+        arrows: false,
+        slidesToShow: 3
+      }
+    }, {
+      breakpoint: 992,
+      settings: {
+        arrows: false,
+        slidesToShow: 2
+      }
+    }, {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        slidesToShow: 1
+      }
+    }
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
@@ -484,29 +484,29 @@
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [{
-        breakpoint: 1670,
-        settings: {
-          slidesToShow: 3,
-        }
-      }, {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
-          centerMode: false
-        }
-      }, {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-          centerMode: false,
-        }
-      }, {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          centerMode: false,
-        }
+      breakpoint: 1670,
+      settings: {
+        slidesToShow: 3,
       }
+    }, {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        centerMode: false
+      }
+    }, {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        centerMode: false,
+      }
+    }, {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        centerMode: false,
+      }
+    }
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
@@ -530,30 +530,30 @@
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [{
-        breakpoint: 1500,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1
-        }
-      }, {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      }, {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      }, {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
+      breakpoint: 1500,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
       }
+    }, {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }, {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }, {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
@@ -581,30 +581,30 @@
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [{
-        breakpoint: 1500,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1
-        }
-      }, {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      }, {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      }, {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
+      breakpoint: 1500,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
       }
+    }, {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }, {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }, {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
@@ -624,30 +624,30 @@
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [{
-        breakpoint: 1500,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1
-        }
-      }, {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      }, {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      }, {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
+      breakpoint: 1500,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
       }
+    }, {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }, {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }, {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
@@ -672,29 +672,29 @@
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [{
-        breakpoint: 1500,
-        settings: {
-          slidesToShow: 3,
-        }
-      }, {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
-          centerMode: false
-        }
-      }, {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-          centerMode: false
-        }
-      }, {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          centerMode: false
-        }
+      breakpoint: 1500,
+      settings: {
+        slidesToShow: 3,
       }
+    }, {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        centerMode: false
+      }
+    }, {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        centerMode: false
+      }
+    }, {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        centerMode: false
+      }
+    }
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
@@ -715,30 +715,30 @@
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [{
-        breakpoint: 1500,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1
-        }
-      }, {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      }, {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      }, {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
+      breakpoint: 1500,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
       }
+    }, {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }, {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }, {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
@@ -766,17 +766,17 @@
     slidesToShow: 1,
     slidesToScroll: 1,
     responsive: [{
-        breakpoint: 1670,
-        settings: {
-          arrows: false
-        }
-      }, {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          speed: 1000
-        }
+      breakpoint: 1670,
+      settings: {
+        arrows: false
       }
+    }, {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        speed: 1000
+      }
+    }
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
@@ -878,26 +878,26 @@
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [{
-        breakpoint: 1500,
-        settings: {
-          slidesToShow: 3
-        }
-      }, {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2
-        }
-      }, {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2
-        }
-      }, {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1
-        }
+      breakpoint: 1500,
+      settings: {
+        slidesToShow: 3
       }
+    }, {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2
+      }
+    }, {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2
+      }
+    }, {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1
+      }
+    }
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
@@ -921,35 +921,35 @@
     slidesToScroll: 1,
     asNavFor: '.latest-blog-area',
     responsive: [{
-        breakpoint: 1670,
-        settings: {
-          arrows: false
-        }
-      }, {
-        breakpoint: 1200,
-        settings: {
-          arrows: false,
-          slidesToShow: 1
-        }
-      }, {
-        breakpoint: 992,
-        settings: {
-          arrows: false,
-          slidesToShow: 1
-        }
-      }, {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          slidesToShow: 2
-        }
-      }, {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1,
-          arrows: false,
-        }
+      breakpoint: 1670,
+      settings: {
+        arrows: false
       }
+    }, {
+      breakpoint: 1200,
+      settings: {
+        arrows: false,
+        slidesToShow: 1
+      }
+    }, {
+      breakpoint: 992,
+      settings: {
+        arrows: false,
+        slidesToShow: 1
+      }
+    }, {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        slidesToShow: 2
+      }
+    }, {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
+      }
+    }
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
@@ -969,29 +969,29 @@
     slidesToScroll: 1,
     asNavFor: '.popular-blog',
     responsive: [{
-        breakpoint: 1670,
-        settings: {
-          arrows: false
-        }
-      }, {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 1,
-          arrows: false,
-        }
-      }, {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 1,
-          arrows: false,
-        }
-      }, {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          arrows: false,
-        }
+      breakpoint: 1670,
+      settings: {
+        arrows: false
       }
+    }, {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
+      }
+    }, {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
+      }
+    }, {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
+      }
+    }
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
@@ -1011,29 +1011,29 @@
     slidesToShow: 1,
     slidesToScroll: 1,
     responsive: [{
-        breakpoint: 1670,
-        settings: {
-          arrows: false
-        }
-      }, {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 1,
-          arrows: false,
-        }
-      }, {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 1,
-          arrows: false,
-        }
-      }, {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          arrows: false,
-        }
+      breakpoint: 1670,
+      settings: {
+        arrows: false
       }
+    }, {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
+      }
+    }, {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
+      }
+    }, {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
+      }
+    }
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
@@ -1052,29 +1052,29 @@
     slidesToShow: 1,
     slidesToScroll: 1,
     responsive: [{
-        breakpoint: 1670,
-        settings: {
-          arrows: false
-        }
-      }, {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 1,
-          arrows: false,
-        }
-      }, {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 1,
-          arrows: false,
-        }
-      }, {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          arrows: false,
-        }
+      breakpoint: 1670,
+      settings: {
+        arrows: false
       }
+    }, {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
+      }
+    }, {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
+      }
+    }, {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
+      }
+    }
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
@@ -1096,18 +1096,18 @@
     slidesToShow: 1,
     slidesToScroll: 1,
     responsive: [{
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 1,
-          arrows: false,
-        }
-      }, {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          arrows: false,
-        }
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
       }
+    }, {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
+      }
+    }
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
@@ -1130,31 +1130,31 @@
     slidesToShow: 5,
     slidesToScroll: 1,
     responsive: [{
-        breakpoint: 1500,
-        settings: {
-          slidesToShow: 5
-        }
-      }, {
-        breakpoint: 1350,
-        settings: {
-          slidesToShow: 4
-        }
-      }, {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 3
-        }
-      }, {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2
-        }
-      }, {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1
-        }
+      breakpoint: 1500,
+      settings: {
+        slidesToShow: 5
       }
+    }, {
+      breakpoint: 1350,
+      settings: {
+        slidesToShow: 4
+      }
+    }, {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3
+      }
+    }, {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2
+      }
+    }, {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1
+      }
+    }
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
@@ -1173,31 +1173,31 @@
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [{
-        breakpoint: 1500,
-        settings: {
-          slidesToShow: 3
-        }
-      }, {
-        breakpoint: 1350,
-        settings: {
-          slidesToShow: 2
-        }
-      }, {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 3
-        }
-      }, {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2
-        }
-      }, {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1
-        }
+      breakpoint: 1500,
+      settings: {
+        slidesToShow: 3
       }
+    }, {
+      breakpoint: 1350,
+      settings: {
+        slidesToShow: 2
+      }
+    }, {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3
+      }
+    }, {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2
+      }
+    }, {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1
+      }
+    }
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
@@ -1255,29 +1255,29 @@
     slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [{
-        breakpoint: 1670,
-        settings: {
-          arrows: false
-        }
-      }, {
-        breakpoint: 1200,
-        settings: {
-          arrows: false,
-          slidesToShow: 3
-        }
-      }, {
-        breakpoint: 992,
-        settings: {
-          arrows: false,
-          slidesToShow: 2
-        }
-      }, {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          slidesToShow: 1
-        }
+      breakpoint: 1670,
+      settings: {
+        arrows: false
       }
+    }, {
+      breakpoint: 1200,
+      settings: {
+        arrows: false,
+        slidesToShow: 3
+      }
+    }, {
+      breakpoint: 992,
+      settings: {
+        arrows: false,
+        slidesToShow: 2
+      }
+    }, {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        slidesToShow: 1
+      }
+    }
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
@@ -1297,30 +1297,30 @@
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [{
-        breakpoint: 1670,
-        settings: {
-          arrows: true,
-          slidesToShow: 3,
-        }
-      }, {
-        breakpoint: 1200,
-        settings: {
-          arrows: true,
-          slidesToShow: 2
-        }
-      }, {
-        breakpoint: 992,
-        settings: {
-          arrows: true,
-          slidesToShow: 2
-        }
-      }, {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          slidesToShow: 1
-        }
+      breakpoint: 1670,
+      settings: {
+        arrows: true,
+        slidesToShow: 3,
       }
+    }, {
+      breakpoint: 1200,
+      settings: {
+        arrows: true,
+        slidesToShow: 2
+      }
+    }, {
+      breakpoint: 992,
+      settings: {
+        arrows: true,
+        slidesToShow: 2
+      }
+    }, {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        slidesToShow: 1
+      }
+    }
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
@@ -1346,25 +1346,25 @@
     slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [{
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1
-        }
-      }, {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      }, {
-        breakpoint: 768,
-        settings: {
-          autoplaySpeed: 5000,
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
       }
+    }, {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }, {
+      breakpoint: 768,
+      settings: {
+        autoplaySpeed: 5000,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
@@ -1455,30 +1455,30 @@
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [{
-        breakpoint: 1500,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1
-        }
-      }, {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      }, {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      }, {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
+      breakpoint: 1500,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
       }
+    }, {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }, {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }, {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
@@ -1579,9 +1579,9 @@
 
   /*---------- 27. Progress Bar ----------*/
   // Circle Progress Bar Active
-  function circleBarActive(){
-    var  circleProgressWidth = 110;
-    var  circleThickness = 7;
+  function circleBarActive() {
+    var circleProgressWidth = 110;
+    var circleThickness = 7;
     var windowWidth = $(window).width();
 
     if (windowWidth < 768) {
@@ -1591,7 +1591,7 @@
       circleProgressWidth = 110;
       circleThickness = 8;
     }
-    
+
     $('.circle-progress').circleProgress({
       size: circleProgressWidth,
       thickness: circleThickness,
@@ -1605,7 +1605,7 @@
   circleBarActive();
 
   // Progress Bar Active
-  $('.bar-progress .progress-value').each(function(){
+  $('.bar-progress .progress-value').each(function () {
     var width = $(this).attr('data-value');
     $(this).css('width', width + '%')
   })
@@ -1613,7 +1613,7 @@
 
 
 
-/*---------- 28. Service Details Slider ----------*/
+  /*---------- 28. Service Details Slider ----------*/
   $('.service-img-slide').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -1640,25 +1640,25 @@
         slidesToShow: 4,
         slidesToScroll: 1
       }
-    },{
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1
-        }
+    }, {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
     }]
   });
 
 
 
 
-/*---------- 29. Twenty Twenty Img Handler ----------*/
+  /*---------- 29. Twenty Twenty Img Handler ----------*/
 
 
 
 
-/*---------- 30. Button Animation ----------*/
-  function buttonAnimation(btn){
+  /*---------- 30. Button Animation ----------*/
+  function buttonAnimation(btn) {
     $(btn).each(function () {
       var text = $(this).html();
       $(this).html('')
@@ -1696,7 +1696,7 @@
 
 
 
-/*---------- 31. Product Image Slider ----------*/
+  /*---------- 31. Product Image Slider ----------*/
   $('.product-img-slide').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -1770,7 +1770,7 @@
 
 
   /*----------- 33. Rating Input Class Add ----------*/
-  if ($('.vs-rating-input').length > 0){
+  if ($('.vs-rating-input').length > 0) {
     $('.vs-rating-input').each(function () {
       $(this).find('span').on('click', function () {
         $('.vs-rating-input span').addClass('active');
@@ -1850,15 +1850,15 @@
                 scrollTop: target.offset().top - 10
               }, 1000);
             };
-            
+
           });
         });
       })
     }
   };
   onePageNav('.main-menu, .onepage-nav, .mobile-menu');
-  
-  
+
+
   /*----------- 37. Isotop Active ----------*/
   $('.filter-active').imagesLoaded(function () {
     var $grid = $('.filter-active').isotope({
@@ -2073,145 +2073,33 @@
   /*----------- Google Map For Contact Map --------------------*/
 
   function contactMap() {
-    // Basic options for a simple Google Map
-    // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-    var mapOptions = {
-      // How zoomed in you want the map to start at (always required)
-      zoom: 11,
-      scrollwheel: false,
-      // The latitude and longitude to center the map (always required)
-      center: new google.maps.LatLng(40.6700, -73.9400), // New York
-      // This is where you would paste any style found on Snazzy Maps.
-      styles: [{
-        "featureType": "water",
-        "elementType": "geometry",
-        "stylers": [{
-          "color": "#e9e9e9"
-        }, {
-          "lightness": 17
-        }]
-      }, {
-        "featureType": "landscape",
-        "elementType": "geometry",
-        "stylers": [{
-          "color": "#f5f5f5"
-        }, {
-          "lightness": 20
-        }]
-      }, {
-        "featureType": "road.highway",
-        "elementType": "geometry.fill",
-        "stylers": [{
-          "color": "#ffffff"
-        }, {
-          "lightness": 17
-        }]
-      }, {
-        "featureType": "road.highway",
-        "elementType": "geometry.stroke",
-        "stylers": [{
-          "color": "#ffffff"
-        }, {
-          "lightness": 29
-        }, {
-          "weight": .2
-        }]
-      }, {
-        "featureType": "road.arterial",
-        "elementType": "geometry",
-        "stylers": [{
-          "color": "#ffffff"
-        }, {
-          "lightness": 18
-        }]
-      }, {
-        "featureType": "road.local",
-        "elementType": "geometry",
-        "stylers": [{
-          "color": "#ffffff"
-        }, {
-          "lightness": 16
-        }]
-      }, {
-        "featureType": "poi",
-        "elementType": "geometry",
-        "stylers": [{
-          "color": "#f5f5f5"
-        }, {
-          "lightness": 21
-        }]
-      }, {
-        "featureType": "poi.park",
-        "elementType": "geometry",
-        "stylers": [{
-          "color": "#dedede"
-        }, {
-          "lightness": 21
-        }]
-      }, {
-        "elementType": "labels.text.stroke",
-        "stylers": [{
-          "visibility": "on"
-        }, {
-          "color": "#ffffff"
-        }, {
-          "lightness": 16
-        }]
-      }, {
-        "elementType": "labels.text.fill",
-        "stylers": [{
-          "saturation": 36
-        }, {
-          "color": "#333333"
-        }, {
-          "lightness": 40
-        }]
-      }, {
-        "elementType": "labels.icon",
-        "stylers": [{
-          "visibility": "off"
-        }]
-      }, {
-        "featureType": "transit",
-        "elementType": "geometry",
-        "stylers": [{
-          "color": "#f2f2f2"
-        }, {
-          "lightness": 19
-        }]
-      }, {
-        "featureType": "administrative",
-        "elementType": "geometry.fill",
-        "stylers": [{
-          "color": "#fefefe"
-        }, {
-          "lightness": 20
-        }]
-      }, {
-        "featureType": "administrative",
-        "elementType": "geometry.stroke",
-        "stylers": [{
-          "color": "#fefefe"
-        }, {
-          "lightness": 17
-        }, {
-          "weight": 1.2
-        }]
-      }]
-    };
-    // Get the HTML DOM element that will contain your map 
-    // We are using a div with id="map" seen below in the <body>
-    var mapElement = document.getElementById('google-map');
+    /// Initialize and add the map
+    let map;
 
-    // Create the Google Map using our element and options defined above
-    var map = new google.maps.Map(mapElement, mapOptions);
+    async function initMap() {
+      // The location of Uluru
+      const position = { lat: -25.344, lng: 131.031 };
+      // Request needed libraries.
+      //@ts-ignore
+      const { Map } = await google.maps.importLibrary("maps");
+      const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
-    // Let's also add a marker while we're at it
-    var marker = new google.maps.Marker({
-      position: new google.maps.LatLng(40.6700, -73.9400),
-      map: map,
-      title: 'Cryptox'
-    });
+      // The map, centered at Uluru
+      map = new Map(document.getElementById("map"), {
+        zoom: 4,
+        center: position,
+        mapId: "OFFICE",
+      });
+
+      // The marker, positioned at Uluru
+      const marker = new AdvancedMarkerElement({
+        map: map,
+        position: position,
+        title: "Umaxautospares Office",
+      });
+    }
+
+    initMap();
   }
   if ($('#google-map').length != 0) {
     google.maps.event.addDomListener(window, 'load', contactMap);
